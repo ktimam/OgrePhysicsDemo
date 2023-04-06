@@ -52,7 +52,7 @@ namespace Demo
     {
         if (m_dynamicsWorld)
         {
-            m_dynamicsWorld->stepSimulation(timeSinceLast);
+            m_dynamicsWorld->stepSimulation(1.f / 60.f, 10);
         }
 
         GameState::update( timeSinceLast );

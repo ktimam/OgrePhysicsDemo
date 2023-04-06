@@ -246,7 +246,7 @@ void PhysicsWorld::syncPhysicsToGraphics(const btDiscreteDynamicsWorld* rbWorld)
 void PhysicsWorld::exitPhysics()
 {
 	freopen("CONOUT$", "w", stdout);
-	std::ofstream o("simulation2.log");
+	std::ofstream o("simulation.log");
 	o << log << std::endl;
 
 	//cleanup in the reverse order of creation/initialization
